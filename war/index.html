@@ -11,29 +11,33 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Progetto BigData</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="myscript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>    
+    <script src="javascript/google_map.js"></script>
+    <script src="javascript/myscript.js"></script>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4" id="input-container">
-          <form role="form">
-            <div class="form-group">
-              <label for="product-type">Product type:</label>
-              <input type="text" class="form-control" id="product-type" placeholder="Enter product type">
-            </div>
-            <div class="form-group">
-              <label for="product-quantity">Quantity:</label>
-              <input type="text" class="form-control" id="product-quantity" placeholder="Quantity">
-            </div>
-            <button type="submit" class="btn btn-success btn-lg" id="search">Search</button>
-          </form>
-          <p></p>
+        	<form role="form" id="input-form">
+	            <div class="form-group">
+              		<label for="product-type">Product type:</label>
+              		<input type="text" class="form-control" id="product-type" placeholder="Enter product type">
+            	</div>
+            	<div class="form-group">
+              		<label for="product-quantity">Quantity:</label>
+              		<input type="text" class="form-control" id="product-quantity" placeholder="Quantity">
+            	</div>
+            	<div class="center-items">
+            		<button type="button" class="btn btn-success btn-lg" id="search-btn">Search</button>
+        		</div>
+          	</form>          	
         </div>
         <div class="col-md-8" id="map-container">
-          <p>Col 8</p>
+          <div id="map_canvas"></div>
         </div>
       </div>
     </div>

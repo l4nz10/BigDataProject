@@ -1,0 +1,21 @@
+#map_canvas {
+	height: 100%;
+	width: 100%;
+	background-color: #CCC;
+}
+
+#input-form {
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#search-btn {
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.center-items {
+	text-align: center;
+}
